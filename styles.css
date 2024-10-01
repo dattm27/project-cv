@@ -1,0 +1,164 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar styling */
+  #navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  #navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  #navbar ul li {
+    margin: 0 15px;
+  }
+  
+  #navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  #navbar ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Welcome Section */
+  #welcome-section {
+    height: 100vh; /* Viewport height */
+    background-color: #282c34;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #welcome-section h1 {
+    font-size: 3em;
+  }
+  
+  .intro {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .intro h2 {
+    font-size: 2.5em;
+    color: white;
+  }
+  
+  .intro p {
+    font-size: 1.5em;
+    color: #ccc;
+  }
+
+  .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 3px solid white;
+    object-fit: cover; /* Ensures the image fits inside the circle neatly */
+  }
+
+  /* Projects Section *//* Projects Section */
+
+
+#projects h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin: 20px;
+
+}
+
+#project-list{
+  display: flex;
+}
+
+.project-tile img {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.project-tile a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-tile {
+  width: 40%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: white;
+  text-align: center;
+
+}
+
+  
+  .project-tile a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Contact Section */
+  #contact {
+    padding: 50px 20px;
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+  }
+  
+  #profile-link {
+    color: #007acc;
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+  
+  #profile-link:hover {
+    text-decoration: underline;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .social-links a {
+    color: white; /* Change to your desired icon color */
+    font-size: 2em; /* Adjust size as needed */
+    margin: 0 15px; /* Space between icons */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .social-links a:hover {
+    color: #007acc; /* Change color on hover */
+  }
+  
+  
+  /* Media Query for smaller screens */
+  @media (max-width: 768px) {
+    #navbar ul {
+      flex-direction: column;
+    }
+  
+    .project-tile {
+      width: 95%;
+    }
+  }
+  
+
